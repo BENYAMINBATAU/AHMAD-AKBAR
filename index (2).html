@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Hasil Penelitian - Benyamin Batau</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 2cm;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #000;
+            background: white;
+        }
+        
+        .container {
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #000;
+        }
+        
+        .header h1 {
+            font-size: 16pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .header h2 {
+            font-size: 14pt;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            font-size: 10pt;
+            margin-top: 10px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        
+        .section-title {
+            font-size: 13pt;
+            font-weight: bold;
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            background: #e8e8e8;
+            border-left: 5px solid #333;
+        }
+        
+        .subsection {
+            margin-bottom: 15px;
+            margin-left: 20px;
+        }
+        
+        .subsection-title {
+            font-size: 11.5pt;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 10pt;
+        }
+        
+        table th {
+            background: #333;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        table td {
+            padding: 8px 10px;
+            border: 1px solid #ddd;
+        }
+        
+        table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        .highlight {
+            background: #fffacd;
+            padding: 12px;
+            border-left: 4px solid #ffd700;
+            margin: 12px 0;
+        }
+        
+        .result-box {
+            background: #f0f8ff;
+            border: 2px solid #4169e1;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .result-box .value {
+            font-size: 18pt;
+            font-weight: bold;
+            color: #4169e1;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .conclusion-box {
+            background: #e8f5e9;
+            border: 2px solid #4caf50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .conclusion-box h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        
+        ul, ol {
+            margin-left: 30px;
+            margin-top: 8px;
+        }
+        
+        li {
+            margin-bottom: 6px;
+        }
+        
+        .page-break {
+            page-break-after: always;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 15px;
+            border-top: 2px solid #000;
+            text-align: center;
+            font-size: 9pt;
+        }
+        
+        @media print {
+            .no-print { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HALAMAN 1: JUDUL DAN ABSTRAK -->
+        <div class="header">
+            <h1>Laporan Hasil Penelitian Tesis</h1>
+            <h2>Penerapan Metode Deteksi Insulator Busi Menggunakan<br>
+            Aplikasi Color Grab Berbantuan Analisis ChatGPT<br>
+            dalam Praktik Pemeliharaan Mesin</h2>
+            <p><strong>Oleh:</strong><br>
+            BENYAMIN BATAU<br>
+            NIM: 240020301078<br><br>
+            <strong>Program Studi Pendidikan Teknologi Kejuruan</strong><br>
+            <strong>Pascasarjana Universitas Negeri Makassar</strong><br>
+            2026</p>
+        </div>
+
+        <div class="section">
+            <div class="section-title">ABSTRAK</div>
+            <p style="text-align: justify;">
+                Penelitian ini dilatarbelakangi oleh rendahnya akurasi dan tingginya subjektivitas siswa SMK dalam mendiagnosis kondisi mesin berdasarkan warna center insulator busi. Sebagai solusi, penelitian ini menguji efektivitas integrasi aplikasi Color Grab dan ChatGPT sebagai media pembelajaran berbasis digital. Melalui metode <em>quasi eksperimen</em> dengan desain <em>nonequivalent control group</em>, penelitian ini membandingkan hasil belajar antara kelas eksperimen (n=22) yang menggunakan teknologi tersebut dengan kelas kontrol (n=22) yang menggunakan metode konvensional. Data dikumpulkan melalui instrumen tes yang telah valid (24 butir, r-hitung 0,403-0,778) dan reliabel (Cronbach's Alpha = 0,914), kemudian dianalisis menggunakan perhitungan N-Gain dan uji t.
+            </p>
+            <p style="text-align: justify; margin-top: 10px;">
+                Hasil penelitian menunjukkan peningkatan hasil belajar yang signifikan pada kelas eksperimen. Kelas eksperimen mencapai mean posttest 80,10 (± 8,62) dengan N-Gain 0,435 (kategori sedang), sedangkan kelas kontrol mencapai mean posttest 71,65 (± 11,00) dengan N-Gain 0,255 (kategori rendah). Uji independent sample t-test menunjukkan perbedaan signifikan (t = 2,7714, p = 0,008 < 0,05) dengan effect size besar (Cohen's d = 0,836). Disimpulkan bahwa pemanfaatan aplikasi Color Grab dan ChatGPT secara signifikan mampu meningkatkan objektivitas diagnosis serta hasil belajar siswa pada program keahlian teknik otomotif.
+            </p>
+            <p style="margin-top: 10px;"><strong>Kata Kunci:</strong> Aplikasi Color Grab, ChatGPT, Diagnosis Kondisi Mesin, Hasil Belajar, Pendidikan Kejuruan, Teknik Otomotif, N-Gain</p>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- HALAMAN 2: HASIL VALIDITAS & RELIABILITAS -->
+        <div class="section">
+            <div class="section-title">1. VALIDITAS DAN RELIABILITAS INSTRUMEN</div>
+            
+            <div class="subsection">
+                <div class="subsection-title">1.1. Uji Validitas</div>
+                <p>Instrumen penelitian terdiri dari 24 butir soal yang diujikan kepada 25 responden (N=25).</p>
+                
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Nilai</th>
+                        <th>Keterangan</th>
+                    </tr>
+                    <tr>
+                        <td>Jumlah Responden (N)</td>
+                        <td>25</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Degree of Freedom (df)</td>
+                        <td>23</td>
+                        <td>N - 2</td>
+                    </tr>
+                    <tr>
+                        <td>r-tabel (α = 0,05)</td>
+                        <td>0,396</td>
+                        <td>Nilai kritis</td>
+                    </tr>
+                    <tr>
+                        <td>Rentang r-hitung</td>
+                        <td>0,403 - 0,778</td>
+                        <td>Semua > r-tabel</td>
+                    </tr>
+                    <tr>
+                        <td>Rata-rata r-hitung</td>
+                        <td>0,601</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah Butir Valid</td>
+                        <td>24 dari 24 (100%)</td>
+                        <td><strong>SEMUA VALID</strong></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">1.2. Uji Reliabilitas</div>
+                <div class="result-box">
+                    <p style="text-align: center; margin-bottom: 5px;">Cronbach's Alpha</p>
+                    <div class="value">0,914</div>
+                    <p style="text-align: center; font-weight: bold; color: #2e7d32;">RELIABEL (Kategori: BAIK)</p>
+                    <p style="text-align: center; margin-top: 10px; font-size: 9pt;">Instrumen memenuhi kriteria reliabilitas tinggi (≥ 0,80)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">2. STATISTIK DESKRIPTIF</div>
+            
+            <table>
+                <tr>
+                    <th rowspan="2">Statistik</th>
+                    <th colspan="3">Kelas Eksperimen (n=22)</th>
+                    <th colspan="3">Kelas Kontrol (n=22)</th>
+                </tr>
+                <tr>
+                    <th>Pretest</th>
+                    <th>Posttest</th>
+                    <th>N-Gain</th>
+                    <th>Pretest</th>
+                    <th>Posttest</th>
+                    <th>N-Gain</th>
+                </tr>
+                <tr>
+                    <td><strong>Mean</strong></td>
+                    <td>64,54</td>
+                    <td><strong>80,10</strong></td>
+                    <td><strong>0,435</strong></td>
+                    <td>61,89</td>
+                    <td><strong>71,65</strong></td>
+                    <td><strong>0,255</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>Std Dev</strong></td>
+                    <td>12,49</td>
+                    <td>8,62</td>
+                    <td>0,141</td>
+                    <td>10,95</td>
+                    <td>11,00</td>
+                    <td>0,207</td>
+                </tr>
+                <tr>
+                    <td><strong>Min</strong></td>
+                    <td>45,67</td>
+                    <td>64,12</td>
+                    <td>0,041</td>
+                    <td>43,89</td>
+                    <td>51,23</td>
+                    <td>-0,042</td>
+                </tr>
+                <tr>
+                    <td><strong>Max</strong></td>
+                    <td>89,45</td>
+                    <td>93,78</td>
+                    <td>0,638</td>
+                    <td>84,56</td>
+                    <td>89,12</td>
+                    <td>0,659</td>
+                </tr>
+                <tr>
+                    <td><strong>Peningkatan (Δ)</strong></td>
+                    <td colspan="3"><strong>+15,56 poin</strong></td>
+                    <td colspan="3"><strong>+9,76 poin</strong></td>
+                </tr>
+            </table>
+
+            <div class="highlight">
+                <p><strong>Interpretasi N-Gain:</strong></p>
+                <ul>
+                    <li>Kelas Eksperimen: N-Gain = 0,435 → Kategori <strong>SEDANG (menuju Tinggi)</strong></li>
+                    <li>Kelas Kontrol: N-Gain = 0,255 → Kategori <strong>RENDAH (menuju Sedang)</strong></li>
+                    <li>Selisih N-Gain: 0,180 (41,4% lebih tinggi pada kelas eksperimen)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- HALAMAN 3: UJI PRASYARAT -->
+        <div class="section">
+            <div class="section-title">3. UJI PRASYARAT ANALISIS</div>
+            
+            <div class="subsection">
+                <div class="subsection-title">3.1. Uji Normalitas (Shapiro-Wilk)</div>
+                <table>
+                    <tr>
+                        <th>Data</th>
+                        <th>W-statistic</th>
+                        <th>p-value</th>
+                        <th>Status (α=0,05)</th>
+                    </tr>
+                    <tr>
+                        <td>Pretest Eksperimen</td>
+                        <td>0,9609</td>
+                        <td>0,5067</td>
+                        <td><strong>✓ NORMAL</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Posttest Eksperimen</td>
+                        <td>0,9380</td>
+                        <td>0,1799</td>
+                        <td><strong>✓ NORMAL</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Pretest Kontrol</td>
+                        <td>0,9659</td>
+                        <td>0,6162</td>
+                        <td><strong>✓ NORMAL</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Posttest Kontrol</td>
+                        <td>0,9634</td>
+                        <td>0,5601</td>
+                        <td><strong>✓ NORMAL</strong></td>
+                    </tr>
+                </table>
+                <p style="margin-top: 10px;"><em>Kesimpulan: Semua data berdistribusi normal (p-value > 0,05)</em></p>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">3.2. Uji Homogenitas Varians (Levene's Test)</div>
+                <table>
+                    <tr>
+                        <th>Data</th>
+                        <th>W-statistic</th>
+                        <th>p-value</th>
+                        <th>Status (α=0,05)</th>
+                    </tr>
+                    <tr>
+                        <td>Pretest</td>
+                        <td>0,3619</td>
+                        <td>0,5507</td>
+                        <td><strong>✓ HOMOGEN</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Posttest</td>
+                        <td>1,5620</td>
+                        <td>0,2183</td>
+                        <td><strong>✓ HOMOGEN</strong></td>
+                    </tr>
+                </table>
+                <p style="margin-top: 10px;"><em>Kesimpulan: Varians antar kelompok homogen (p-value > 0,05)</em></p>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">3.3. Uji Linearitas (Pearson Correlation)</div>
+                <table>
+                    <tr>
+                        <th>Kelompok</th>
+                        <th>Korelasi (r)</th>
+                        <th>p-value</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td>Eksperimen (Pretest vs Posttest)</td>
+                        <td>0,8594</td>
+                        <td>0,0000</td>
+                        <td><strong>✓ LINEAR (Kuat)</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Kontrol (Pretest vs Posttest)</td>
+                        <td>0,6847</td>
+                        <td>0,0004</td>
+                        <td><strong>✓ LINEAR (Sedang)</strong></td>
+                    </tr>
+                </table>
+                <p style="margin-top: 10px;"><em>Kesimpulan: Hubungan linear antara pretest dan posttest terpenuhi</em></p>
+            </div>
+
+            <div class="highlight">
+                <p><strong>RINGKASAN UJI PRASYARAT:</strong></p>
+                <p>✓ Normalitas: <strong>TERPENUHI</strong> (semua p > 0,05)<br>
+                ✓ Homogenitas: <strong>TERPENUHI</strong> (semua p > 0,05)<br>
+                ✓ Linearitas: <strong>TERPENUHI</strong> (korelasi signifikan)</p>
+                <p style="margin-top: 10px; font-weight: bold;">→ Data memenuhi syarat untuk uji parametrik (Independent Sample t-Test)</p>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- HALAMAN 4: UJI HIPOTESIS -->
+        <div class="section">
+            <div class="section-title">4. UJI HIPOTESIS</div>
+            
+            <div class="subsection">
+                <div class="subsection-title">4.1. Hipotesis Penelitian</div>
+                <p><strong>H₀:</strong> Tidak ada perbedaan hasil belajar yang signifikan antara kelas eksperimen dan kelas kontrol<br>
+                <strong>H₁:</strong> Ada perbedaan hasil belajar yang signifikan antara kelas eksperimen dan kelas kontrol</p>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">4.2. Independent Sample t-Test (Posttest)</div>
+                <div class="result-box">
+                    <table style="border: none; margin: 0;">
+                        <tr>
+                            <td style="border: none; text-align: center;">
+                                <p style="margin-bottom: 5px;">t-statistic</p>
+                                <div style="font-size: 24pt; font-weight: bold; color: #4169e1;">2,7714</div>
+                            </td>
+                            <td style="border: none; text-align: center;">
+                                <p style="margin-bottom: 5px;">p-value (2-tailed)</p>
+                                <div style="font-size: 24pt; font-weight: bold; color: #d32f2f;">0,008282</div>
+                            </td>
+                        </tr>
+                    </table>
+                    <p style="text-align: center; margin-top: 15px; font-size: 11pt;">
+                        <strong>p-value (0,008) < α (0,05)</strong>
+                    </p>
+                    <p style="text-align: center; font-weight: bold; color: #2e7d32; font-size: 13pt; margin-top: 10px;">
+                        ✓ TOLAK H₀ → HIPOTESIS DITERIMA
+                    </p>
+                </div>
+
+                <p style="margin-top: 15px;"><strong>95% Confidence Interval:</strong> [2,44 ; 14,47]</p>
+                <p>Artinya: Dengan tingkat kepercayaan 95%, perbedaan rata-rata skor posttest antara kelas eksperimen dan kontrol berada antara 2,44 hingga 14,47 poin.</p>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">4.3. Independent Sample t-Test (N-Gain)</div>
+                <table>
+                    <tr>
+                        <th>Kelompok</th>
+                        <th>Mean N-Gain</th>
+                        <th>Std Dev</th>
+                    </tr>
+                    <tr>
+                        <td>Eksperimen</td>
+                        <td>0,435</td>
+                        <td>0,141</td>
+                    </tr>
+                    <tr>
+                        <td>Kontrol</td>
+                        <td>0,255</td>
+                        <td>0,207</td>
+                    </tr>
+                </table>
+                
+                <div class="result-box" style="margin-top: 15px;">
+                    <p style="text-align: center; margin-bottom: 5px;">t-statistic = <strong>3,3054</strong> | p-value = <strong>0,001947</strong></p>
+                    <p style="text-align: center; font-weight: bold; color: #2e7d32; margin-top: 10px;">
+                        ✓ SIGNIFIKAN (p < 0,05)
+                    </p>
+                    <p style="text-align: center; margin-top: 10px;">
+                        Peningkatan hasil belajar (N-Gain) kelas eksperimen<br>
+                        <strong>SIGNIFIKAN LEBIH TINGGI</strong> dibanding kelas kontrol
+                    </p>
+                </div>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">4.4. Effect Size (Cohen's d)</div>
+                <table>
+                    <tr>
+                        <th>Perbandingan</th>
+                        <th>Cohen's d</th>
+                        <th>Interpretasi</th>
+                    </tr>
+                    <tr>
+                        <td>Paired t-test Eksperimen (Pre vs Post)</td>
+                        <td>1,417</td>
+                        <td><strong>BESAR</strong> (d > 0,8)</td>
+                    </tr>
+                    <tr>
+                        <td>Paired t-test Kontrol (Pre vs Post)</td>
+                        <td>0,868</td>
+                        <td><strong>BESAR</strong> (d > 0,8)</td>
+                    </tr>
+                    <tr style="background: #fffacd;">
+                        <td><strong>Independent (Eks vs Kon)</strong></td>
+                        <td><strong>0,836</strong></td>
+                        <td><strong>BESAR</strong> (d > 0,8)</td>
+                    </tr>
+                </table>
+
+                <div class="highlight">
+                    <p><strong>Interpretasi Effect Size:</strong></p>
+                    <ul>
+                        <li><strong>d = 0,836</strong> menunjukkan efek yang <strong>BESAR</strong> (> 0,8)</li>
+                        <li>Perbedaan hasil belajar memiliki <strong>dampak praktis yang SUBSTANSIAL</strong></li>
+                        <li>Peningkatan tidak hanya signifikan secara statistik, tetapi juga <strong>bermakna secara praktis</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-break"></div>
+
+        <!-- HALAMAN 5: PEMBAHASAN & KESIMPULAN -->
+        <div class="section">
+            <div class="section-title">5. PEMBAHASAN</div>
+            
+            <p style="text-align: justify;">
+                Hasil penelitian menunjukkan bahwa penerapan aplikasi Color Grab berbantuan ChatGPT efektif meningkatkan hasil belajar siswa dalam kompetensi diagnosis mesin. Hal ini dibuktikan dengan beberapa temuan signifikan:
+            </p>
+
+            <div class="subsection">
+                <div class="subsection-title">5.1. Peningkatan Hasil Belajar</div>
+                <p style="text-align: justify;">
+                    Kelas eksperimen mengalami peningkatan skor sebesar 15,56 poin (dari 64,54 menjadi 80,10), sedangkan kelas kontrol hanya meningkat 9,76 poin (dari 61,89 menjadi 71,65). Selisih peningkatan sebesar 5,80 poin menunjukkan bahwa metode pembelajaran menggunakan teknologi digital lebih efektif dalam meningkatkan pemahaman siswa.
+                </p>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">5.2. Objektivitas Diagnosis</div>
+                <p style="text-align: justify;">
+                    Aplikasi Color Grab mampu mengonversi pengamatan visual subjektif menjadi data objektif berbasis nilai RGB/HEX. Hal ini mengurangi bias interpretasi individual dan meningkatkan konsistensi diagnosis kondisi mesin berdasarkan warna insulator busi. ChatGPT berperan sebagai asisten analisis yang memberikan interpretasi kontekstual berdasarkan data objektif tersebut.
+                </p>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">5.3. Kategori N-Gain</div>
+                <p style="text-align: justify;">
+                    Distribusi kategori N-Gain menunjukkan bahwa 86,4% siswa kelas eksperimen berada pada kategori SEDANG, sedangkan kelas kontrol hanya 40,9%. Bahkan, 59,1% siswa kelas kontrol masih berada pada kategori RENDAH. Hal ini menunjukkan bahwa pembelajaran dengan Color Grab dan ChatGPT menghasilkan peningkatan yang lebih merata di seluruh siswa.
+                </p>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">5.4. Relevansi dengan Industri 4.0</div>
+                <p style="text-align: justify;">
+                    Integrasi teknologi digital dalam pembelajaran ini sejalan dengan tuntutan revolusi Industri 4.0. Siswa tidak hanya belajar diagnosis mesin secara konvensional, tetapi juga terbiasa menggunakan tools digital yang relevan dengan kebutuhan industri otomotif modern. Hal ini dapat mengurangi <em>skill gap</em> antara lulusan SMK dengan kebutuhan industri.
+                </p>
+            </div>
+        </div>
+
+        <div class="conclusion-box">
+            <h3 style="text-align: center; font-size: 14pt; margin-bottom: 15px;">KESIMPULAN</h3>
+            
+            <p style="text-align: justify; margin-bottom: 12px;">
+                Berdasarkan hasil penelitian dan pembahasan, dapat disimpulkan bahwa:
+            </p>
+
+            <ol>
+                <li style="text-align: justify; margin-bottom: 8px;">
+                    <strong>Aplikasi Color Grab berbantuan ChatGPT efektif meningkatkan akurasi dan objektivitas diagnosis insulator busi.</strong> Teknologi ini mampu mengonversi data visual menjadi data digital yang objektif dan konsisten.
+                </li>
+                
+                <li style="text-align: justify; margin-bottom: 8px;">
+                    <strong>Ada perbedaan signifikan hasil belajar antara kelas eksperimen dan kelas kontrol.</strong> Hal ini dibuktikan melalui:
+                    <ul style="margin-top: 5px;">
+                        <li>Uji independent t-test: t = 2,7714, p = 0,008 < 0,05 (SIGNIFIKAN)</li>
+                        <li>Mean posttest: 80,10 (eksperimen) vs 71,65 (kontrol)</li>
+                        <li>N-Gain: 0,435 (eksperimen) vs 0,255 (kontrol)</li>
+                        <li>Effect size: d = 0,836 (BESAR → dampak praktis substansial)</li>
+                    </ul>
+                </li>
+                
+                <li style="text-align: justify; margin-bottom: 8px;">
+                    <strong>Peningkatan hasil belajar pada kelas eksperimen lebih tinggi dan lebih merata.</strong> Sebanyak 86,4% siswa eksperimen mencapai kategori N-Gain SEDANG, sedangkan hanya 40,9% pada kelas kontrol.
+                </li>
+                
+                <li style="text-align: justify;">
+                    <strong>Metode pembelajaran ini dapat direkomendasikan untuk diterapkan pada kompetensi keahlian Teknik Otomotif (TKR/TSM)</strong> sebagai alternatif pembelajaran yang lebih objektif, interaktif, dan relevan dengan tuntutan industri 4.0.
+                </li>
+            </ol>
+        </div>
+
+        <div class="section" style="margin-top: 30px;">
+            <div class="section-title">6. REKOMENDASI</div>
+            
+            <div class="subsection">
+                <div class="subsection-title">6.1. Untuk Praktisi Pendidikan</div>
+                <ul>
+                    <li>Mengadopsi aplikasi Color Grab dan ChatGPT sebagai media pembelajaran alternatif</li>
+                    <li>Mengintegrasikan teknologi digital dalam kurikulum pembelajaran otomotif</li>
+                    <li>Memberikan pelatihan kepada guru tentang penggunaan tools diagnostik digital</li>
+                </ul>
+            </div>
+
+            <div class="subsection">
+                <div class="subsection-title">6.2. Untuk Penelitian Lanjutan</div>
+                <ul>
+                    <li>Mengeksplorasi penerapan metode ini pada kompetensi lain di bidang otomotif</li>
+                    <li>Melakukan penelitian longitudinal untuk melihat retensi pengetahuan jangka panjang</li>
+                    <li>Mengembangkan aplikasi terintegrasi yang mencakup berbagai aspek diagnosis otomotif</li>
+                    <li>Meneliti efektivitas metode ini pada level pendidikan yang berbeda</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Peneliti:</strong> BENYAMIN BATAU (NIM: 240020301078)</p>
+            <p><strong>Pembimbing I:</strong> Prof. Dr. Darmawang, M.Kes</p>
+            <p><strong>Pembimbing II:</strong> Prof. Dr. Ir. Muh. Yahya, M.Kes., M.Eng., IPU., ASEAN.Eng.</p>
+            <p style="margin-top: 10px;">Program Studi Pendidikan Teknologi Kejuruan<br>
+            Pascasarjana Universitas Negeri Makassar<br>
+            2026</p>
+        </div>
+
+        <div class="no-print" style="margin-top: 30px; padding: 15px; background: #e3f2fd; border-radius: 5px; text-align: center;">
+            <p><strong>Untuk mencetak laporan ini sebagai PDF:</strong></p>
+            <p>Tekan <kbd>Ctrl+P</kbd> (Windows/Linux) atau <kbd>Cmd+P</kbd> (Mac), pilih "Save as PDF"</p>
+        </div>
+    </div>
+</body>
+</html>
